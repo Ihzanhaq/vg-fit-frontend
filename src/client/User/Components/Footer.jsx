@@ -16,11 +16,17 @@ const Footer = () => {
           <Link to="/coaches" className="footer-link">
             Coaches
           </Link>
+          <Link to="/transformation" className="footer-link">
+            Transformations
+          </Link>
           <Link to="/celebrations" className="footer-link">
             Celebrations
           </Link>
           <Link to="/pricing" className="footer-link">
             Pricing
+          </Link>
+          <Link to="/about" className="footer-link">
+            About
           </Link>
           <Link to="/contact" className="footer-link">
             Contact
