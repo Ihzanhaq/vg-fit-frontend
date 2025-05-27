@@ -1,0 +1,51 @@
+.celebrations-page {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  
+  .celebration-section {
+    margin-bottom: 60px;
+  }
+  
+  .celebration-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .celebration-image-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .celebration-image-wrapper.right {
+    justify-content: flex-end;
+  }
+  
+  .celebration-image-wrapper img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .celebration-image-wrapper img:hover {
+    transform: scale(1.03);
+  }
+  
+  @media (max-width: 768px) {
+    .celebration-image-wrapper {
+      justify-content: center !important;
+    }
+  
+    .celebration-image-wrapper img {
+      width: 100%;
+    }
+  }
+  

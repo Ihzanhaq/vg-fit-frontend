@@ -1,0 +1,197 @@
+.coach-details {
+  width: 100%;
+  margin-top: 113px;
+}
+
+.coach-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.coach-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 500px; /* Adjust this to your preferred max height */
+  overflow: hidden;
+}
+
+.coach-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.next-coach-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  aspect-ratio: 16 / 9;
+  max-height: 300px; 
+}
+.next-coach-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.next-coach-image-container.fade-out {
+    opacity: 0;
+  }
+
+.coach-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.coach-overlay h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.coach-overlay p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.coach-details-info {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 1.1rem;
+  color: #444;
+}
+.coach-details-info {
+  padding: 30px 40px;
+  color: white;
+  font-size: 1rem;
+}
+
+.coach-info-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.coach-description,
+.coach-qualifications {
+  flex: 1;
+  min-width: 280px;
+}
+
+.coach-description h2,
+.coach-qualifications h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.coach-description p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.coach-qualifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coach-qualifications li {
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.custom-bullet {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #4fc08d; /* Stylish icon color */
+}
+
+/* WhatsApp button styling */
+.coach-contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.coach-contact p {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
+}
+
+.next-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.next-round-button {
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.next-round-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.next-label {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .coach-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .coach-overlay p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,225 @@
+.staff-transformations .transformations-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .staff-transformations .transformations-header {
+    text-align: center;
+    font-size: 2.5rem;
+
+    margin-bottom: 0.5rem;
+  }
+  
+  .staff-transformations .transformations-subheader {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+  
+  .staff-transformations .add-transformation-btn {
+    display: block;
+    margin: 0 auto 2rem;
+    padding: 0.8rem 1.5rem;
+    background: #ff5e14;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .staff-transformations .add-transformation-btn:hover {
+    background: #e04b00;
+    transform: translateY(-2px);
+  }
+  
+  .staff-transformations .transformation-form {
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .staff-transformations .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .staff-transformations .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .staff-transformations .form-group input{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  
+  .staff-transformations .submit-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+  }
+  
+  .staff-transformations .submit-btn:hover {
+    background: #218838;
+  }
+  
+  .staff-transformations .transformations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .staff-transformations .transformation-card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .staff-transformations .transformation-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .staff-transformations .image-comparison {
+    display: flex;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .staff-transformations .image-wrapper {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .staff-transformations .image-wrapper h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .staff-transformations .image-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .staff-transformations .transformation-details {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .staff-transformations .transformation-details h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .staff-transformations .duration {
+    color: #ff5e14;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .staff-transformations .story {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+  
+  .staff-transformations .delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .staff-transformations .delete-btn:hover {
+    background: #c82333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .staff-transformations .transformations-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .staff-transformations .image-comparison {
+      flex-direction: column;
+    }
+  }
+  .cropper-wrapper-trans {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85); /* dark overlay */
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cropper-container {
+    position: relative;
+    width: 90vw;
+    max-width: 800px;
+    height: 60vh;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .cropper-controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .crop-confirm-btn,
+  .crop-cancel-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .crop-confirm-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .crop-cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  

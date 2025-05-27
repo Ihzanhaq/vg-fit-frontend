@@ -1,0 +1,137 @@
+/* General Layout for Contact Us Page */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  .contact-section {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section .section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for the form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .form-field input,
+  .form-field textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .form-field input:focus,
+  .form-field textarea:focus {
+    outline-color: #007bff;
+  }
+  .form-field input::placeholder,
+  .form-field textarea::placeholder {
+    font-family: "Poppins", sans-serif;;
+  }
+  
+  .form-field textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Submit Button Style */
+  .form-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Defined width for better consistency */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button:focus {
+    outline-color: #0056b3;
+  }
+  /* Error message for phone validation */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+  
+    .contact-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-form {
+      gap: 15px;
+    }
+  
+    .form-field input,
+    .form-field textarea {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .submit-button {
+      font-size: 1rem;
+      width: 100%; /* Full width on mobile for better tap accuracy */
+    }
+  }
+  

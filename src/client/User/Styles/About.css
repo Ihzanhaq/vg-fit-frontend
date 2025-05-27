@@ -1,0 +1,300 @@
+/* About Page Container */
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  /* Header Section */
+  .about-header {
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 40px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .about-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    color: #ff5e14;
+  }
+  
+  /* Description Section */
+  .about-description {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .description-text {
+    flex: 1;
+  }
+  
+  .description-text h2 {
+    font-size: 2rem;
+    color: #ff5e14;
+    margin-bottom: 20px;
+  }
+  
+  .description-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .description-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .description-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .description-image:hover img {
+    transform: scale(1.03);
+  }
+  
+  /* Staff Carousel */
+  .staff-section {
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .staff-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff5e14;
+  }
+  
+  .staff-carousel-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .staff-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+  }
+  
+  .staff-card {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex-direction: column;
+  }
+
+  
+  .carousel-button {
+    background: #ff5e14;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  
+  .carousel-button:hover {
+    background: #e04b00;
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dot.active {
+    background: #ff5e14;
+    transform: scale(1.2);
+  }
+  
+  /* Timings Section */
+  .timings-section {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .timings-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff5e14;
+  }
+  
+  .timings-card {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto 15px;
+  }
+  
+  .timings-days {
+    text-align: right;
+    padding-right: 20px;
+    font-weight: 600;
+  }
+  
+  .timings-hours {
+    text-align: left;
+  }
+  
+  .timings-days p, .timings-hours p {
+    margin: 10px 0;
+  }
+  
+  .timings-note {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* New Branch Section */
+  .new-branch {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  .branch-image {
+    flex: 1;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .branch-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .construction-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff5e14;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .branch-info {
+    flex: 1;
+  }
+  
+  .branch-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff5e14;
+  }
+  
+  .branch-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .branch-info ul {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  
+  .branch-info li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-description, .new-branch {
+      flex-direction: column;
+    }
+    
+    .staff-card {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .staff-card img {
+      width: 100%;
+      height: 300px;
+    }
+    
+    .timings-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .timings-days {
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: 15px;
+    }
+    
+    .timings-hours {
+      text-align: center;
+    }
+  }

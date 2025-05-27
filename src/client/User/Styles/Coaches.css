@@ -1,0 +1,48 @@
+.coaches-page {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .coaches-page h1 {
+    margin-bottom: 40px;
+    color: white;
+  }
+  
+  .coaches-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Alternate alignment */
+  .coach-container.left {
+    justify-content: flex-start;
+    display: flex;
+  }
+  
+  .coach-container.right {
+    justify-content: flex-end;
+    display: flex;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .coaches-grid {
+      align-items: center;
+    }
+  
+    .coach-container.left,
+    .coach-container.right {
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .coach-card {
+      width: 90%;
+    }
+  }
+  

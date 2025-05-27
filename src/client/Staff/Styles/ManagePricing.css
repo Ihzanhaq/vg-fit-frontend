@@ -1,0 +1,228 @@
+/* Container and cards */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* <== KEY: centers the cards */
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.pricing-card, .add-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.pricing-card:hover, .add-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+
+.pricing-card h3 {
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.pricing-card p {
+  margin: 0;
+  color: #bbb;
+}
+
+.pricing-card ul {
+  padding-left: 18px;
+  color: #aaa;
+  margin: 8px 0;
+}
+
+.pricing-actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Add card specifics */
+.add-card {
+  border: 2px dashed #666;
+  color: #eee;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;  
+}
+
+/* Buttons */
+.pricing-container button {
+  background-color: #444;
+  color: #eee;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  margin: 4px;
+}
+
+.pricing-containerbutton:hover {
+  background-color: #666;
+  color: white;
+}
+
+.pricing-actions button {
+  width: 100px;
+}
+
+.add-feature {
+  background-color: #555;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+.add-feature:hover {
+  background-color: #777;
+}
+
+.feature-input button {
+  background: transparent;
+  color: #cc4444;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 6px;
+  transition: color 0.3s ease;
+}
+
+.feature-input button:hover {
+  color: #ff0000;
+}
+
+.pricing-container button:focus {
+  outline: 2px solid #aaa;
+  outline-offset: 2px;
+}
+
+/* Modal and form styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 20, 20, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-form {
+  background-color: #222;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #ddd;
+}
+
+.modal-form input[type="text"] {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background-color: #121212;
+  color: #eee;
+  transition: border-color 0.3s ease;
+}
+
+.modal-form input[type="text"]:focus {
+  outline: none;
+  border-color: #888;
+  background-color: #1c1c1c;
+}
+
+.modal-form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #bbb;
+}
+
+/* Feature input group */
+.feature-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-input input[type="text"] {
+  flex-grow: 1;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+.pricing-group {
+  margin-bottom: 2rem;
+
+}
+.plan-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white; /* Adjust as per your theme */
+  text-align: center;
+}
+.grouped-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .pricing-card, .add-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+
+  .modal-form {
+    padding: 20px 25px;
+    max-width: 90vw;
+  }
+}
