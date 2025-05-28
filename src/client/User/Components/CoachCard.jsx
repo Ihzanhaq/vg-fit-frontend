@@ -5,10 +5,7 @@ const CoachCard = ({ coach, position, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
   const isLeft = position === "left";
 
-  const imageUrl = coach.image.startsWith("Assets/")
-    ? coach.image
-    : `https://vgfit-backend.onrender.com${coach.image}`;
-
+  const imageUrl = coach.image
   return (
     <div
       className={`coach-card ${isHovered ? "hovered" : ""}`}

@@ -24,3 +24,4 @@ yarn-error.log*
 
 #Environment variable files
 Credentials.env
+.env
