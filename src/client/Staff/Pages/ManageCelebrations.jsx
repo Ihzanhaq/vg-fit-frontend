@@ -192,9 +192,7 @@ const ManageCelebrations = () => {
                   <div key={idx} className="image-card">
                     <img
                       src={
-                        img.startsWith("http")
-                          ? img
-                          : `https://vgfit-backend.onrender.com${img}`
+                        img
                       }
                       alt="celebration"
                     />

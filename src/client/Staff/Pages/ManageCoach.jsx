@@ -137,7 +137,7 @@ const ManageCoach = () => {
       <h2 className="heading">{editingId ? "Edit Coach" : "Add Coach"}</h2>
 
       {showCropper && imageSrc && (
-        <div className="cropper-wrapper">
+        <div className="cropper-wrapper-coach">
           <div className="cropper-container">
             <Cropper
               image={imageSrc}
@@ -299,7 +299,7 @@ const ManageCoach = () => {
         {coaches.map((coach) => (
           <div className="coach-card-staff" key={coach._id}>
             <img
-              src={`https://vgfit-backend.onrender.com${coach.image}`}
+              src={coach.image}
               alt={coach.name}
               className="coach-img"
             />

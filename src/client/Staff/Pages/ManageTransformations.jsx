@@ -250,14 +250,14 @@ const ManageTransformations = () => {
               <div className="image-comparison">
                 <div className="image-wrapper before">
                   <img
-                    src={`https://vgfit-backend.onrender.com${transformation.beforeImage}`}
+                    src={transformation.beforeImage}
                     alt={`${transformation.name} before`}
                   />
                   <span>Before</span>
                 </div>
                 <div className="image-wrapper after">
                   <img
-                    src={`https://vgfit-backend.onrender.com${transformation.afterImage}`}
+                    src={transformation.afterImage}
                     alt={`${transformation.name} after`}
                   />
                   <span>After</span>

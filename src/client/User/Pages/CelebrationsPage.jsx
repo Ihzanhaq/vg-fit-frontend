@@ -32,7 +32,7 @@ const Celebrations = () => {
                     src={
                       img.startsWith("http")
                         ? img
-                        : `https://vgfit-backend.onrender.com${img}`
+                        : img
                     }
                     alt={`${event.title} ${imgIdx + 1}`}
                   />

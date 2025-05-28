@@ -254,7 +254,7 @@
                 <div key={staff._id} className="staff-card-admin">
                   <div className="staff-image-container">
                     <img
-                      src={`https://vgfit-backend.onrender.com${staff.image}`}
+                      src={staff.image}
                       alt={staff.name}
                       className="staff-image"
                     />

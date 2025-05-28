@@ -48,15 +48,14 @@ function CoachDetails() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }, 100);
   };
-  const DetailUrl = `https://vgfit-backend.onrender.com${coach.detailImage}`;
-  const nextDetail = `https://vgfit-backend.onrender.com${nextCoach.detailImage}`;
+
 
 
   return (
     <div className="coach-details">
       <AnimatedSection>
         <div className="coach-image-container">
-          <img src={DetailUrl} alt={coach.name} />
+          <img src={coach.detailImage} alt={coach.name} />
           <div className="coach-overlay">
             <h1>{coach.name}</h1>
             <p>{coach.title}</p>
@@ -104,7 +103,7 @@ function CoachDetails() {
 
       <AnimatedSection>
         <div className="next-coach-image-container">
-          <img src={nextDetail} alt={nextCoach.name} />
+          <img src={nextCoach.detailImage} alt={nextCoach.name} />
           <div className="coach-overlay">
             <p className="next-label">Next</p>
             <h1>{nextCoach.name}</h1>

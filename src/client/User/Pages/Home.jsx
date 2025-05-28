@@ -202,7 +202,7 @@ const Home = () => {
                   >
                     <div className="team-image-container">
                       <img
-                        src={`https://vgfit-backend.onrender.com${member.image}`}
+                        src={member.image}
                         alt={member.name}
                         className="team-image"
                       />

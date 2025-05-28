@@ -29,8 +29,8 @@ const Transformations = () => {
   const openImageOverlay = (transformation, isBeforeImage) => {
     setSelectedImage({
       url: isBeforeImage
-        ? `https://vgfit-backend.onrender.com${transformation.beforeImage}`
-        : `https://vgfit-backend.onrender.com${transformation.afterImage}`,
+        ? transformation.beforeImage
+        : transformation.afterImage,
       name: transformation.name,
       type: isBeforeImage ? "Before" : "After",
     });
@@ -84,7 +84,7 @@ const Transformations = () => {
                   onClick={() => openImageOverlay(transformation, true)}
                 >
                   <img
-                    src={`https://vgfit-backend.onrender.com${transformation.beforeImage}`}
+                    src={transformation.beforeImage}
                     alt={`${transformation.name} before transformation`}
                   />
                   <div className="image-label">Before</div>
@@ -94,7 +94,7 @@ const Transformations = () => {
                   onClick={() => openImageOverlay(transformation, false)}
                 >
                   <img
-                    src={`https://vgfit-backend.onrender.com${transformation.afterImage}`}
+                    src={transformation.afterImage}
                     alt={`${transformation.name} after transformation`}
                   />
                   <div className="image-label">After</div>

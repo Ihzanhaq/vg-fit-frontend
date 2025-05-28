@@ -79,7 +79,7 @@ const About = () => {
                 {staff.length > 0 && (
                   <>
                     <img
-                      src={`https://vgfit-backend.onrender.com${staff[currentStaffIndex].image}`}
+                      src={staff[currentStaffIndex].image}
                       alt={staff[currentStaffIndex].name}
                     />
                     <div className="staff-info">
